@@ -1,0 +1,119 @@
+html,
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.nav-container {
+  margin: auto;
+}
+.nav-container svg {
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.showText {
+  position: absolute;
+  left: 0;
+  display: flex;
+  height: 1.5em;
+  margin-top: 10px;
+  color: #1fa637;
+}
+.showText:after {
+  content: "";
+  width: 10px;
+  height: 12px;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+.showText.more:after {
+  background: url(https://static.justpark.com/web/assets/arrow_down.8cc77bd81836246bc46bbef4768c59cc.svg) 0 5px no-repeat;
+}
+.showText.less:after {
+  background: url(https://static.justpark.com/web/assets/arrow_up.ef0fbbe4b4d9d62b38e4d2455de28baa.svg) 0 5px no-repeat;
+}
+
+.firebaseui-container {
+  max-width: unset !important;
+}
+.firebaseui-page-provider-sign-in {
+  margin: 0 !important;
+  max-width: unset !important;
+}
+.firebaseui-page-provider-sign-in .firebaseui-card-content {
+  padding: 0 !important;
+}
+.firebaseui-id-idp-button {
+  box-shadow: none !important;
+  border-radius: 4px !important;
+  border: 1px solid #dfdfdf !important;
+  max-width: unset !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 45px !important;
+}
+
+
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 6px;
+  background: silver;
+  border-radius: 20px;
+  height: 40px;
+}
